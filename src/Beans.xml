@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    
+    
+    
+    <bean  id="address"  class="com.arrk.test.address" >
+    
+   <constructor-arg  value="111" type="int"   >  </constructor-arg>
+    <constructor-arg value="l.u gadakari marg" ></constructor-arg>
+    <constructor-arg value="mumbai"></constructor-arg>
+    </bean>
+    
+    
+    
+    
+    <bean  id="person_bean"  class="com.arrk.test.person" > 
+    
+    
+    <constructor-arg value="597" type="int"></constructor-arg>
+       <constructor-arg  value="mahesh mohite" ></constructor-arg>
+    <constructor-arg > 
+    <ref  bean="address"  />
+    
+    </constructor-arg>
+    
+    
+    
+    
+    </bean>
+    
+    
+    
+    
+    
+    </beans>
